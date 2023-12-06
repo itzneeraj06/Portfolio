@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title> PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="Hero_section ">
+        <nav>
+            <h1 class="logo"><span class="N">N</span><span class="R">R</span><span class="J">J</span></h1>
+            <ul>
+                <li><a href="resume.pdf" target="_blank"> Resume </a> </li>
+                <li><a href=" #"> My Profile </a> </li>
+
+            </ul>
+        </nav>
+        <br>
+        <!--<div id="header" style="float: right"></div>-->
+        <div class="header-text">
+            <p> Web Developer </p>
+            <h1> Hi, I'm <div id="name">Neeraj Chouhan</div>
+            </h1>
+        </div>
+    </section>
+
+    <!-- --------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>Seeking a challenging position in a company where I can leverage my communication and
+                        problem-solving skills to
+                        provide exceptional service to customers and contribute to the growth of the company.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick=" opentab('education')"> Education </p>
+                        <p class="tab-links" onclick=" opentab('projects')"> Projects </p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> Programming Languages </span><br> C++, Java ,Javascript</li>
+                            <li> <span> Web development </span> <br> Html, Css</li>
+                            <li> <span> Database </span><br> SQl</li>
+                            <li> <span> Framework </span><br> Bootstrap, React.js</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li> <span>Mobitechz Website</span><br>Designed and developed a responsive website for
+                                Mobitechz using WordPress. Implemented custom themes, plugins, and optimized the website
+                                for performance and SEO. Showcased products, services, and contact information to
+                                enhance user experience. </li>
+                            <li> <span>Spotify Clone </span><br>Created a web application that replicates the popular
+                                music streaming platform, Spotify. Developed the user interface using HTML and CSS,
+                                ensuring a visually appealing design and intuitive user experience. </li>
+                            <li> <span>College Website </span> <br> Developed a website that closely resembles our
+                                college website, capturing its design elements, color scheme, and layout. Incorporated
+                                interactive features to easily navigate and explore our campus. Included a campus map,
+                                building information, and images to provide an immersive experience. Demonstrated
+                                proficiency in HTML, CSS, and JavaScript to recreate the website's functionality. </li>
+                            <li> <span>Personal Portfolio </span> <br>website to see how I bring creativity and
+                                functionality together. From clean layouts to visually appealing designs, my portfolio
+                                demonstrates my ability to create visually stunning and user-friendly websites. </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>Bachelor's Of Computer Application </span> <br>Shri Vaishnav Institute of
+                                Management • Indore, Madhya Pradesh <br>(2021-Present) </li>
+                            <li> <span>Higher Secondary School Certificate </span><br> Gyan Sagar Vidya Niketan •
+                                Indore, Madhya Pradesh <br>04/2020 <br>
+                                12th passed with 69 percentage</li>
+                            <li> <span>Secondary School Certificate </span><br> Gyan Sagar Vidya Niketan • Indore,
+                                Madhya Pradesh <br>04/2018<br>
+                                10th passed with 72 percentage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="s2">
+            <h2>Our Services</h2>
+            <div class="s3">
+                <div class="s4">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>Web Devlopment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto fugit repellat. Tempore
+                        veniam suscipit accusamus illum, fuga ad aut..</p>
+                    <button>learn more</button>
+                </div>
+                <div class="s4">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h3>UI Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quisquam rerum pariatur minima
+                        quae consequatur fugiat a, debitis ab tempora...</p>
+                    <button>learn more</button>
+                </div>
+                <div class="s4">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum facilis possimus voluptatibus
+                        maiores earum cum iure, porro enim incidunt impedit...</p>
+                    <button>learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="leftcontact">
+          <h1>Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> contact@neeraj.com</p>
+          <p><i class="fa-solid fa-phone"></i> 123-456-7890</p>
+          <div class="icon">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="rightcontact">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Your Email">
+          <textarea placeholder="Message"></textarea>
+          <button class="submit">Submit</button>
+        </div>
+      </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
