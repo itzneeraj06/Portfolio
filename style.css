@@ -296,3 +296,15 @@ font-family: 'Roboto', sans-serif;
  button.submit:hover {
    background-color:rgb(248, 71, 71) ;;
  }
+
+#call{
+   text-decoration: none;
+   color: #fff;
+
+}
+
+/* #mail{
+   text-decoration: none;
+   color: #fff;
+
+} */
