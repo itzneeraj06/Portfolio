@@ -25,16 +25,18 @@
             <h1 class="logo"><span class="N">N</span><span class="R">R</span><span class="J">J</span></h1>
             <ul>
                 <li><a href="resume.pdf" target="_blank"> Resume </a> </li>
-                <li><a href=" #"> My Profile </a> </li>
+                <li><a href="#about"> My Profile </a> </li>
 
             </ul>
         </nav>
         <br>
         <!--<div id="header" style="float: right"></div>-->
         <div class="header-text">
-            <p> Web Developer </p>
+            <!-- <p> Web Developer </p> -->
+            <span id="typed-text"></span><span id="cursor">|</span>
             <h1> Hi, I'm <div id="name">Neeraj Chouhan</div>
             </h1>
+            
         </div>
     </section>
 
@@ -52,7 +54,7 @@
                         provide exceptional service to customers and contribute to the growth of the company.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
                         <p class="tab-links" onclick=" opentab('education')"> Education </p>
                         <p class="tab-links" onclick=" opentab('projects')"> Projects </p>
                     </div>
@@ -167,6 +169,19 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+        const text = "Web Developer "; // Text to be typed
+        let index = 0;
+        let speed = 100; // Typing speed in milliseconds
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById("typed-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+
     </script>
 </body>
 
