@@ -12,13 +12,31 @@
  }
 
 .Hero_section{
-min-height: 100vh;
-min-width: 100vh;
+   min-height: 100vh;
+   min-width: 100vh;
 background-image: url("19691.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position:center;
 padding: 10px 10px;
+animation: img 1s ease-in 0s 1  ;
+
+
+}
+.Hero_section:hover{
+   background-color: #2a2a2a;
+}
+@keyframes img{
+   from{
+      opacity: 0.3;
+      
+      
+      
+   }
+   to{
+      opacity: 1;
+      
+   }
 }
 nav{
 display: flex;
@@ -35,15 +53,16 @@ font-family: 'Roboto', sans-serif;
    color: rgb(105, 105, 105);
 
 }
-/* .N{
+
+.N:hover{
    color:#4285F4 ;
 }
-.R{
+.R:hover{
    color:#fbbc05 ;
 }
-.J{
+.J:hover{
    color:#34a853 ;
-} */
+}
 #name{
    display: inline;
    
@@ -85,7 +104,33 @@ font-size: 30px;
 font-size: 60px;
 margin-top: 5px;
 color:#fff;
+position: relative;
+animation: first  0.7s ease 0s 1 alternate;
 }
+@keyframes first{
+   from{
+      bottom: -50px;
+      left: -30px;
+   }
+   to{
+      bottom: 0px;
+      left: 0px;
+   }
+
+}
+.header-text  img {
+   height: 0;
+   transition: height 1s ;
+
+
+}
+
+.header-text  img:hover{
+   height: 1;
+   
+
+}
+
 p{
 color: white;
 }
@@ -308,3 +353,21 @@ font-family: 'Roboto', sans-serif;
    color: #fff;
 
 }
+.typing-animation {
+   font-size: 24px;
+   color: #333;
+   overflow: hidden; /* Hide overflowing characters */
+ }
+ 
+ #cursor {
+   animation: blink 0.8s infinite;
+ }
+ 
+ @keyframes blink {
+   0%, 100% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0;
+   }
+ }
