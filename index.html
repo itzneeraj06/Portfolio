@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <section class="Hero_section ">
         <nav>
             <h1 class="logo"><span class="N">N</span><span class="R">R</span><span class="J">J</span></h1>
@@ -29,23 +28,24 @@
 
             </ul>
         </nav>
+
         <br>
-        <!--<div id="header" style="float: right"></div>-->
+        <div><img src="bg.png" alt="" class="bgimg"></div>
         <div class="header-text">
             <!-- <p> Web Developer </p> -->
-            <span id="typed-text"></span><span id="cursor">|</span>
+            <div class="ccc">
+                <span id="typed-text"></span><span id="cursor">|</span>
+            </div>
             <h1> Hi, I'm <div id="name">Neeraj Chouhan</div>
             </h1>
-            
+
         </div>
     </section>
-
-    <!-- --------About-------------->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="photo.jpg">
+                    <img src="photo.jpg" class="aboutprofile">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me</h1>
@@ -82,9 +82,7 @@
                                 interactive features to easily navigate and explore our campus. Included a campus map,
                                 building information, and images to provide an immersive experience. Demonstrated
                                 proficiency in HTML, CSS, and JavaScript to recreate the website's functionality. </li>
-                            <li> <span>Personal Portfolio </span> <br>website to see how I bring creativity and
-                                functionality together. From clean layouts to visually appealing designs, my portfolio
-                                demonstrates my ability to create visually stunning and user-friendly websites. </li>
+
                         </ul>
                     </div>
 
@@ -134,25 +132,26 @@
     </div>
     <div class="contact">
         <div class="leftcontact">
-          <h1>Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:neerajchouhan0604@gmail.com" id="mail">contact@neeraj.com</a></p>
-          <p><i class="fa-solid fa-phone"></i> <a href="tel:7745930380" id="call">123-456-7890</a></p>
-          
-          <div class="icon">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/neeraj0604_"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/itzneeraj06"><i class="fa-brands fa-github"></i></a>
-          </div>
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:neerajchouhan0604@gmail.com"
+                    id="mail">contact@neeraj.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:7745930380" id="call">123-456-7890</a></p>
+
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/neeraj0604_"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/itzneeraj06"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
         <div class="rightcontact">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Your Email">
-          <textarea placeholder="Message"></textarea>
-          <button class="submit">Submit</button>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Your Email">
+            <textarea placeholder="Message"></textarea>
+            <button class="submit">Submit</button>
         </div>
-      </div>
+    </div>
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -169,19 +168,23 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        const text = "Web Developer "; // Text to be typed
-        let index = 0;
-        let speed = 100; // Typing speed in milliseconds
-
         function type() {
+            const text = "Web Developer ";
+            let index = 0;
+            let speed = 100;
+
+
             if (index < text.length) {
                 document.getElementById("typed-text").textContent += text.charAt(index);
                 index++;
                 setTimeout(type, speed);
+
             }
         }
-        type();
-
+        setTimeout(type, 2000);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
     </script>
 </body>
 
