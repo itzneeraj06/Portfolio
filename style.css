@@ -134,6 +134,26 @@ p {
    color: white;
 }
 
+
+.homeicon {
+   margin-top: 20px;
+   margin-left: 50px;
+   display: none;
+}
+
+.homeicon i {
+   margin-right: 10px;
+   color: #fff;
+   font-size: 20px;
+
+}
+
+.homeicon i:hover {
+
+   color: rgb(248, 71, 71);
+
+}
+
 #about {
    padding: 70px;
    color: bisque;
@@ -180,7 +200,7 @@ p {
 
 .tab-links {
    margin-right: 40px;
-   font-size: 18;
+   font-size: 18px;
    font-weight: 300;
    cursor: pointer;
    position: relative;
@@ -388,7 +408,7 @@ button.submit:hover {
    /* Hide overflowing characters */
 }
 
-#cursor {
+x #cursor {
    animation: blink 0.8s infinite;
 }
 
@@ -447,6 +467,14 @@ button.submit:hover {
       min-width: 132vh;
    }
 
+   .logo {
+      font-size: 100px;
+   }
+
+   nav ul li a {
+      display: none;
+   }
+
    .bgimg {
       height: 230vh;
       margin: 150px 0px;
@@ -461,18 +489,39 @@ button.submit:hover {
    .header-text {
 
       display: flex;
-      align-items: enter;
+      align-items: flex-start;
       min-width: 140%;
       margin-left: 50px;
+      margin-top: 100px;
    }
 
    .header-text h1 {
-      font-size: 80px;
+      font-size: 120px;
 
    }
 
+   .homeicon {
+      display: flex;
+
+      margin-left: 520px;
+      margin-top: -200px;
+      margin-bottom: 200px;
+
+   }
+
+   .homeicon a i {
+      font-size: 50px;
+      padding: 10px;
+   }
+
+
    .ccc {
       font-size: 50px;
+      margin-bottom: -400px;
+   }
+
+   #name {
+      display: block;
    }
 
    .about-col-2 {
@@ -480,24 +529,136 @@ button.submit:hover {
    }
 
    .services {
-      height: 80em;
+      height: 180em;
       width: 80em;
       padding-top: 200px;
 
    }
 
+   .s2 h2 {
+      font-size: 100px;
+      margin-bottom: 50px;
+   }
+
+   .s3 {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+   }
+
    .s4 {
-      height: 300px;
-      width: 400;
+      height: 500px;
+      width: 500px;
    }
 
    .s4:hover {
-      height: 305px;
-      width: 405;
+      height: 505px;
+      width: 505px;
    }
 
    .contact {
-      width: 80em;
+      width: 80rem;
+      height: 100em;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 50px;
+   }
+
+   .leftcontact {
+      margin-bottom: 100px;
+   }
+
+   .leftcontact h1 {
+      font-size: 100px;
+   }
+
+   .leftcontact p {
+      font-size: 30px;
+   }
+
+   .rightcontact {
+      width: 80%;
+
+   }
+
+   .rightcontact button {
+      font-size: 30px;
+   }
+
+
+
+   .s4 i {
+      font-size: 160px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+   }
+
+   .s4 h3 {
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 5px;
+   }
+
+   .s4 p {
+      font-size: 22px;
+      margin-top: 20px;
+   }
+
+   #about {
+      height: 120rem;
+   }
+
+   .container {
+      width: 70rem;
+   }
+
+   .row {
+      flex-direction: column;
+
+   }
+
+   .about-col-1 {
+      display: flex;
+      justify-content: center;
+   }
+
+   .about-col-1 img {
+
+      border-radius: 50%;
+      height: 600px;
+      width: 600px;
+   }
+
+   .about-col-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+   }
+
+   .about-col-2 h1 {
+      font-size: 100px;
+   }
+
+   .about-col-2 p {
+      width: 70%;
+      font-size: 40px;
+      text-align: center;
+   }
+   .tab-links{
+      margin-top: 100px;
+      font-size: 50px;
+   }
+   .responsiv{
+      font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+   .responsiv .tab-contents ul li span{
+      font-size:40px ;
    }
 
 }
