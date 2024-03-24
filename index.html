@@ -19,28 +19,31 @@
 </head>
 
 <body>
-    <section class="Hero_section ">
+    <div class="Hero_section ">
         <nav>
             <h1 class="logo"><span class="N">N</span><span class="R">R</span><span class="J">J</span></h1>
             <ul>
                 <li><a href="resume.pdf" target="_blank"> Resume </a> </li>
                 <li><a href="#about"> My Profile </a> </li>
-
             </ul>
         </nav>
-
         <br>
-        <div><img src="bg.png" alt="" class="bgimg"></div>
+        <div>
+            <img src="bg.png" alt="" class="bgimg">
+        </div>
         <div class="header-text">
-            <!-- <p> Web Developer </p> -->
             <div class="ccc">
                 <span id="typed-text"></span><span id="cursor">|</span>
             </div>
-            <h1> Hi, I'm <div id="name">Neeraj Chouhan</div>
-            </h1>
-
+            <h1> Hi, I'm <span id="name">Neeraj Chouhan</span> </h1>
         </div>
-    </section>
+    </div>
+    <div class="homeicon">
+        <a href="https://www.instagram.com/neeraj0604_"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/itzneeraj06"><i class="fa-brands fa-github"></i></a>
+
+    </div>
     <div id="about">
         <div class="container">
             <div class="row">
@@ -53,50 +56,57 @@
                         problem-solving skills to
                         provide exceptional service to customers and contribute to the growth of the company.</p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
-                        <p class="tab-links" onclick=" opentab('education')"> Education </p>
-                        <p class="tab-links" onclick=" opentab('projects')"> Projects </p>
-                    </div>
+                    <div class="responsiv">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                            <p class="tab-links" onclick=" opentab('education')"> Education </p>
+                            <p class="tab-links" onclick=" opentab('projects')"> Projects </p>
+                        </div>
 
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li> <span> Programming Languages </span><br> C++, Java ,Javascript</li>
-                            <li> <span> Web development </span> <br> Html, Css</li>
-                            <li> <span> Database </span><br> SQl</li>
-                            <li> <span> Framework </span><br> Bootstrap, React.js</li>
-                        </ul>
-                    </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span> Programming Languages </span><br> C++, Java ,Javascript</li>
+                                <li> <span> Web development </span> <br> Html, Css</li>
+                                <li> <span> Database </span><br> SQl</li>
+                                <li> <span> Framework </span><br> Bootstrap, React.js</li>
+                            </ul>
+                        </div>
 
-                    <div class="tab-contents" id="projects">
-                        <ul>
-                            <li> <span>Mobitechz Website</span><br>Designed and developed a responsive website for
-                                Mobitechz using WordPress. Implemented custom themes, plugins, and optimized the website
-                                for performance and SEO. Showcased products, services, and contact information to
-                                enhance user experience. </li>
-                            <li> <span>Spotify Clone </span><br>Created a web application that replicates the popular
-                                music streaming platform, Spotify. Developed the user interface using HTML and CSS,
-                                ensuring a visually appealing design and intuitive user experience. </li>
-                            <li> <span>College Website </span> <br> Developed a website that closely resembles our
-                                college website, capturing its design elements, color scheme, and layout. Incorporated
-                                interactive features to easily navigate and explore our campus. Included a campus map,
-                                building information, and images to provide an immersive experience. Demonstrated
-                                proficiency in HTML, CSS, and JavaScript to recreate the website's functionality. </li>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li> <span>Mobitechz Website</span><br>Designed and developed a responsive website for
+                                    Mobitechz using WordPress. Implemented custom themes, plugins, and optimized the
+                                    website
+                                    for performance and SEO. Showcased products, services, and contact information to
+                                    enhance user experience. </li>
+                                <li> <span>Spotify Clone </span><br>Created a web application that replicates the
+                                    popular
+                                    music streaming platform, Spotify. Developed the user interface using HTML and CSS,
+                                    ensuring a visually appealing design and intuitive user experience. </li>
+                                <li> <span>College Website </span> <br> Developed a website that closely resembles our
+                                    college website, capturing its design elements, color scheme, and layout.
+                                    Incorporated
+                                    interactive features to easily navigate and explore our campus. Included a campus
+                                    map,
+                                    building information, and images to provide an immersive experience. Demonstrated
+                                    proficiency in HTML, CSS, and JavaScript to recreate the website's functionality.
+                                </li>
 
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
 
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li> <span>Bachelor's Of Computer Application </span> <br>Shri Vaishnav Institute of
-                                Management • Indore, Madhya Pradesh <br>(2021-Present) </li>
-                            <li> <span>Higher Secondary School Certificate </span><br> Gyan Sagar Vidya Niketan •
-                                Indore, Madhya Pradesh <br>04/2020 <br>
-                                12th passed with 69 percentage</li>
-                            <li> <span>Secondary School Certificate </span><br> Gyan Sagar Vidya Niketan • Indore,
-                                Madhya Pradesh <br>04/2018<br>
-                                10th passed with 72 percentage</li>
-                        </ul>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>Bachelor's Of Computer Application </span> <br>Shri Vaishnav Institute of
+                                    Management • Indore, Madhya Pradesh <br>(2021-Present) </li>
+                                <li> <span>Higher Secondary School Certificate </span><br> Gyan Sagar Vidya Niketan •
+                                    Indore, Madhya Pradesh <br>04/2020 <br>
+                                    12th passed with 69 percentage</li>
+                                <li> <span>Secondary School Certificate </span><br> Gyan Sagar Vidya Niketan • Indore,
+                                    Madhya Pradesh <br>04/2018<br>
+                                    10th passed with 72 percentage</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,12 +178,11 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        const text = "Web Developer ";
-            let index = 0;
-            let speed = 100;
-        function type() {
-            
+        const text = "Web Developer "; // Text to be typed
+        let index = 0;
+        let speed = 100; // Typing speed in milliseconds
 
+        function type() {
 
             if (index < text.length) {
                 document.getElementById("typed-text").textContent += text.charAt(index);
