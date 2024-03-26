@@ -154,6 +154,10 @@ p {
 
 }
 
+.ccc2 {
+   display: none;
+}
+
 #about {
    padding: 70px;
    color: bisque;
@@ -362,10 +366,11 @@ p {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
    padding: 10px;
    margin-bottom: 10px;
-   width: 100%;
+   width: 80vh;
    border: 1px solid #ccc;
    border-radius: 4px;
 
@@ -408,7 +413,7 @@ button.submit:hover {
    /* Hide overflowing characters */
 }
 
-x #cursor {
+#cursor {
    animation: blink 0.8s infinite;
 }
 
@@ -460,11 +465,10 @@ x #cursor {
    }
 }
 
-
 @media (max-width:450px) {
    .Hero_section {
-      height: 400vh;
-      min-width: 132vh;
+      height: 100vh;
+      width: 100vw;
    }
 
    .logo {
@@ -476,36 +480,57 @@ x #cursor {
    }
 
    .bgimg {
-      height: 230vh;
-      margin: 150px 0px;
+      height: 80%;
+      margin: 100px 0px;
 
    }
 
    .Hero_section nav {
       margin-top: 10px;
-      width: 150%;
+      width: 100vw;
    }
 
    .header-text {
 
       display: flex;
       align-items: flex-start;
-      min-width: 140%;
-      margin-left: 50px;
-      margin-top: 100px;
+      width: 100vw;
    }
 
    .header-text h1 {
-      font-size: 120px;
+      font-size: 50px;
+      margin-left: 20px;
 
+   }
+
+   #name {
+      font-size: 100px;
+
+   }
+
+   .ccc {
+      display: none;
+   }
+
+   .ccc2 {
+      display: flex;
+      font-size: 50px;
+      margin-top: 30px;
+      margin-left: 20px;
+   }
+
+   #name {
+      display: block;
    }
 
    .homeicon {
       display: flex;
+      justify-content: center;
+   }
 
-      margin-left: 520px;
-      margin-top: -200px;
-      margin-bottom: 200px;
+   .homeiconinner {
+      display: flex;
+      margin-top: 100px;
 
    }
 
@@ -514,151 +539,15 @@ x #cursor {
       padding: 10px;
    }
 
-
-   .ccc {
-      font-size: 50px;
-      margin-bottom: -400px;
-   }
-
-   #name {
-      display: block;
-   }
-
-   .about-col-2 {
-      margin-left: 50px;
+   #about {
+      display: none;
    }
 
    .services {
-      height: 180em;
-      width: 80em;
-      padding-top: 200px;
-
-   }
-
-   .s2 h2 {
-      font-size: 100px;
-      margin-bottom: 50px;
-   }
-
-   .s3 {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-   }
-
-   .s4 {
-      height: 500px;
-      width: 500px;
-   }
-
-   .s4:hover {
-      height: 505px;
-      width: 505px;
+      display: none;
    }
 
    .contact {
-      width: 80rem;
-      height: 100em;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 50px;
+      display: none;
    }
-
-   .leftcontact {
-      margin-bottom: 100px;
-   }
-
-   .leftcontact h1 {
-      font-size: 100px;
-   }
-
-   .leftcontact p {
-      font-size: 30px;
-   }
-
-   .rightcontact {
-      width: 80%;
-
-   }
-
-   .rightcontact button {
-      font-size: 30px;
-   }
-
-
-
-   .s4 i {
-      font-size: 160px;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-   }
-
-   .s4 h3 {
-      font-size: 50px;
-      text-align: center;
-      margin-bottom: 5px;
-   }
-
-   .s4 p {
-      font-size: 22px;
-      margin-top: 20px;
-   }
-
-   #about {
-      height: 120rem;
-   }
-
-   .container {
-      width: 70rem;
-   }
-
-   .row {
-      flex-direction: column;
-
-   }
-
-   .about-col-1 {
-      display: flex;
-      justify-content: center;
-   }
-
-   .about-col-1 img {
-
-      border-radius: 50%;
-      height: 600px;
-      width: 600px;
-   }
-
-   .about-col-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 100px;
-   }
-
-   .about-col-2 h1 {
-      font-size: 100px;
-   }
-
-   .about-col-2 p {
-      width: 70%;
-      font-size: 40px;
-      text-align: center;
-   }
-   .tab-links{
-      margin-top: 100px;
-      font-size: 50px;
-   }
-   .responsiv{
-      font-size: 30px;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-   }
-   .responsiv .tab-contents ul li span{
-      font-size:40px ;
-   }
-
 }
