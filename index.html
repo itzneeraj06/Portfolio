@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <br>
-        <div>
+        <div id="imgparent">
             <img src="bg.png" alt="" class="bgimg">
         </div>
         <div class="header-text">
@@ -36,14 +36,21 @@
                 <span id="typed-text"></span><span id="cursor">|</span>
             </div>
             <h1> Hi, I'm <span id="name">Neeraj Chouhan</span> </h1>
+            <div class="ccc2">
+                <span id="typed-text2"></span><span id="cursor">|</span>
+            </div>
+            
+
+        </div>
+        <div class="homeicon">
+            <div class="homeiconinner">
+                <a href="https://www.instagram.com/neeraj0604_"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/itzneeraj06"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </div>
-    <div class="homeicon">
-        <a href="https://www.instagram.com/neeraj0604_"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/itzneeraj06"><i class="fa-brands fa-github"></i></a>
-
-    </div>
+    
     <div id="about">
         <div class="container">
             <div class="row">
@@ -156,12 +163,17 @@
             </div>
         </div>
         <div class="rightcontact">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Your Email">
-            <textarea placeholder="Message"></textarea>
-            <button class="submit">Submit</button>
+            <form action="https://api.web3forms.com/submit" method="POST" class="rightcontact">
+                <input type="hidden" name="access_key" value="91db8d00-cdc5-42e1-aeff-add355355dd8">
+                <input type="text" name="name"  id="name" required placeholder="Name">
+                <input type="email" name="email" id="email" required placeholder="your Email">
+                <textarea name="message" id="text" required placeholder="Message"></textarea>
+                <button type="submit" class="submit">Submit </button>
+
+            </form>
         </div>
     </div>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -186,6 +198,8 @@
 
             if (index < text.length) {
                 document.getElementById("typed-text").textContent += text.charAt(index);
+                document.getElementById("typed-text2").textContent += text.charAt(index);
+
                 index++;
                 setTimeout(type, speed);
 
@@ -196,6 +210,7 @@
             window.scrollTo(0, 0);
         }
     </script>
+
 </body>
 
 </html>
