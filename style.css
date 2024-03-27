@@ -8,6 +8,7 @@ body {
    background: rgb(7, 7, 7);
    background: linear-gradient(99deg, rgba(7, 7, 7, 1) 0%, rgba(3, 2, 20, 1) 94%);
    color: #fff;
+   overflow-x: hidden;
    /* font-family: 'Roboto', sans-serif; */
 
 }
@@ -361,11 +362,12 @@ p {
    align-items: flex-start;
 }
 
-input[type="text"],input[type="email"]
+input[type="text"],
+input[type="email"],
 textarea {
    padding: 10px;
    margin-bottom: 10px;
-   width: 100%;
+   width: 80vh;
    border: 1px solid #ccc;
    border-radius: 4px;
 
@@ -518,7 +520,8 @@ x #cursor {
       font-size: 50px;
       margin-bottom: -400px;
    }
-   .ccc2{
+
+   .ccc2 {
       display: none;
    }
 
@@ -559,7 +562,7 @@ x #cursor {
    }
 
    .contact {
-      width: 80rem;
+      width: 100rem;
       height: 100em;
       flex-direction: column;
       align-items: flex-start;
@@ -649,18 +652,21 @@ x #cursor {
       font-size: 40px;
       text-align: center;
    }
-   .tab-links{
+
+   .tab-links {
       margin-top: 100px;
       font-size: 50px;
    }
-   .responsiv{
+
+   .responsiv {
       font-size: 30px;
       display: flex;
       flex-direction: column;
       width: 100%;
    }
-   .responsiv .tab-contents ul li span{
-      font-size:40px ;
+
+   .responsiv .tab-contents ul li span {
+      font-size: 40px;
    }
 
 }
