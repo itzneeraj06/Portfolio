@@ -8,28 +8,22 @@ body {
    background: rgb(7, 7, 7);
    background: linear-gradient(99deg, rgba(7, 7, 7, 1) 0%, rgba(3, 2, 20, 1) 94%);
    color: #fff;
-   overflow-x: hidden;
-   /* font-family: 'Roboto', sans-serif; */
 
 }
 
 
 .Hero_section {
-   min-height: 100vh;
-   min-width: 100vh;
-   padding: 10px 10px;
+   height: 100vh;
+   width: 100%;
    animation: img 1s ease-in 0s 1;
-
-
 }
 
 nav {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   flex-wrap: wrap;
    font-family: 'Roboto', sans-serif;
-
+   height: 10vh;
 }
 
 .logo {
@@ -53,12 +47,6 @@ nav {
 .J:hover {
    color: #34a853;
    cursor: pointer;
-}
-
-#name {
-   display: inline;
-
-   color: rgb(248, 71, 71);
 }
 
 nav ul li {
@@ -91,21 +79,29 @@ nav ul li a:hover::after {
    width: 100%;
 }
 
+.imgparent {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: -10vh;
+}
+
 .bgimg {
-   position: relative;
-   height: 820px;
-   top: -120px;
-   margin-left: 400px;
    animation: bg 2s ease-in 0s 1;
+   width: 45%;
+   height: 100%;
+
+
 }
 
 .header-text {
-   margin-top: -300px;
+   position: relative;
+   top: -17vh;
    display: flex;
-   justify-content: end;
    flex-direction: column;
    font-size: 30px;
-   background-color: transparent;
+   padding-left: 1%;
 }
 
 .header-text h1 {
@@ -116,30 +112,30 @@ nav ul li a:hover::after {
    animation: first 2s ease 0s 1 alternate;
 }
 
-
-
-.header-text img {
-   height: 0;
-   transition: height 1s;
-
-
-}
-
-.header-text img:hover {
-   height: 1;
-
-
+#mainname {
+   color: rgb(248, 71, 71);
 }
 
 p {
    color: white;
 }
 
+#cursor {
+   animation: blink 0.8s infinite;
+}
+
+.ccc2 {
+   display: none;
+   font-size: 20px;
+   margin-top: 5px;
+}
 
 .homeicon {
-   margin-top: 20px;
-   margin-left: 50px;
+   height: 10vh;
    display: none;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
 }
 
 .homeicon i {
@@ -155,31 +151,50 @@ p {
 
 }
 
-#about {
-   padding: 70px;
+.about {
+   padding: 7%;
    color: bisque;
-}
-
-.row {
+   height: 100vh;
+   width: 100%;
    display: flex;
    justify-content: space-between;
 
 }
 
 .about-col-1 {
-   flex-basis: 50%;
+   width: 50%;
+   padding: 1%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
 }
 
 
 .about-col-1 img {
    border-radius: 15px;
-   height: 500px;
-   width: 500px;
+   width: 80%;
+}
+
+.about-col-1 img:hover {
+   box-shadow: 1px 1px 50px #2a2a2a;
+   scale: 1.01;
 }
 
 .about-col-2 {
-   flex-basis: 50%;
+   width: 50%;
+   display: flex;
+   align-items: top;
+   align-content: center;
+   justify-content: center;
+
+
+}
+
+.about-col-2-inner {
+   display: flex;
+   flex-direction: column;
+   padding-top: 30px;
 
 }
 
@@ -190,9 +205,7 @@ p {
 
 }
 
-.sub-title p {
-   font-size: 30px;
-}
+.about-col-2 p {}
 
 .tab-titles {
    display: flex;
@@ -236,7 +249,6 @@ p {
 .tab-contents {
 
    display: none;
-
    font-family: monospace;
 }
 
@@ -246,21 +258,18 @@ p {
 
 .services {
    width: 100%;
-   height: 100vh;
+   height: 90vh;
    display: flex;
-   align-items: top;
+   align-items: center;
    justify-content: center;
-   align-content: center;
-
    font-family: 'Roboto', sans-serif;
 }
 
 .s2 {
-   padding-top: 100px;
    display: flex;
    flex-direction: column;
    width: 80%;
-
+   height: 70vh;
 }
 
 .s2 h2 {
@@ -269,16 +278,21 @@ p {
 
 .s3 {
    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
    justify-content: center;
+   width: 100%;
+   height: 100%;
 }
 
 .s4 {
    height: 250px;
    width: 350px;
+   margin: 20px;
+   padding: 10px;
    background-color: #2a2a2a;
-   margin: 50px 50px;
-   padding: 15px;
    border-radius: 10px;
+   overflow: hidden;
 }
 
 .s4:hover {
@@ -314,18 +328,18 @@ p {
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 100%;
    height: 70vh;
-   padding: 200px;
    background-color: #333;
-
+   padding: 2%;
    font-family: 'Roboto', sans-serif;
 }
 
 .leftcontact {
    width: 50%;
+   padding: 10%;
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
 }
 
 .leftcontact h1 {
@@ -367,9 +381,10 @@ input[type="email"],
 textarea {
    padding: 10px;
    margin-bottom: 10px;
-   width: 80vh;
+   width: 100%;
    border: 1px solid #ccc;
    border-radius: 4px;
+
 
 }
 
@@ -403,16 +418,6 @@ button.submit:hover {
 
 }
 
-.typing-animation {
-   font-size: 24px;
-   color: #333;
-   overflow: hidden;
-   /* Hide overflowing characters */
-}
-
-x #cursor {
-   animation: blink 0.8s infinite;
-}
 
 @keyframes blink {
 
@@ -429,7 +434,6 @@ x #cursor {
 @keyframes first {
    from {
       opacity: 0.2;
-
    }
 
    to {
@@ -441,8 +445,6 @@ x #cursor {
 @keyframes bg {
    from {
       scale: 0.7;
-
-
    }
 
    to {
@@ -453,8 +455,6 @@ x #cursor {
 @keyframes img {
    from {
       opacity: 0.5;
-
-
    }
 
    to {
@@ -462,211 +462,106 @@ x #cursor {
    }
 }
 
+@media (max-width:768px) {
+
+   .bgimg {
+      width: 60%;
+   }
+
+   .about-col-1 img {
+      border-radius: 15px;
+      width: 80%;
+      height: 50%;
+   }
+
+   .tab-contents {
+      overflow: scroll;
+   }
+
+   .services,
+   .s2 {
+      height: auto;
+   }
+
+   .leftcontact {
+      padding: 0px;
+   }
+
+
+
+}
 
 @media (max-width:450px) {
-   .Hero_section {
-      height: 400vh;
-      min-width: 132vh;
-   }
-
-   .logo {
-      font-size: 100px;
-   }
-
    nav ul li a {
       display: none;
    }
 
-   .bgimg {
-      height: 230vh;
-      margin: 150px 0px;
-
+   .ccc {
+      display: none
    }
 
-   .Hero_section nav {
-      margin-top: 10px;
-      width: 150%;
-   }
-
-   .header-text {
-
+   .ccc2 {
       display: flex;
-      align-items: flex-start;
-      min-width: 140%;
-      margin-left: 50px;
-      margin-top: 100px;
-   }
-
-   .header-text h1 {
-      font-size: 120px;
-
    }
 
    .homeicon {
       display: flex;
-      justify-content: center;
-      margin-top: 200px;
-      margin-left: 450px;
-
    }
 
-   .homeicon a i {
-      font-size: 50px;
-      padding: 10px;
+   .imgparent {
+      height: 60vh;
+      margin-top: 0;
    }
 
-
-   .ccc {
-      font-size: 50px;
-      margin-bottom: -400px;
+   .bgimg {
+      width: 90%;
    }
 
-   .ccc2 {
-      display: none;
+   .header-text {
+      top: 0;
+      height: 20%;
+      padding-left: 3%;
    }
 
-   #name {
+   .header-text h1 {
+      font-size: 30px;
+   }
+
+   #mainname {
       display: block;
+      font-size: 40px;
    }
 
-   .about-col-2 {
-      margin-left: 50px;
-   }
-
-   .services {
-      height: 180em;
-      width: 80em;
-      padding-top: 200px;
-
-   }
-
-   .s2 h2 {
-      font-size: 100px;
-      margin-bottom: 50px;
-   }
-
-   .s3 {
+   .about {
       flex-direction: column;
-      align-items: center;
-      margin-top: 50px;
-   }
-
-   .s4 {
-      height: 500px;
-      width: 500px;
-   }
-
-   .s4:hover {
-      height: 505px;
-      width: 505px;
-   }
-
-   .contact {
-      width: 100rem;
-      height: 100em;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 50px;
-   }
-
-   .leftcontact {
-      margin-bottom: 100px;
-   }
-
-   .leftcontact h1 {
-      font-size: 100px;
-   }
-
-   .leftcontact p {
-      font-size: 30px;
-   }
-
-   .rightcontact {
-      width: 80%;
-
-   }
-
-   .rightcontact button {
-      font-size: 30px;
-   }
-
-
-
-   .s4 i {
-      font-size: 160px;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-   }
-
-   .s4 h3 {
-      font-size: 50px;
-      text-align: center;
-      margin-bottom: 5px;
-   }
-
-   .s4 p {
-      font-size: 22px;
-      margin-top: 20px;
-   }
-
-   #about {
-      height: 120rem;
-   }
-
-   .container {
-      width: 70rem;
-   }
-
-   .row {
-      flex-direction: column;
-
+      height: auto;
    }
 
    .about-col-1 {
-      display: flex;
-      justify-content: center;
+      padding: 0;
    }
 
-   .about-col-1 img {
-
-      border-radius: 50%;
-      height: 600px;
-      width: 600px;
-   }
-
+   .about-col-1,
    .about-col-2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 100px;
-   }
-
-   .about-col-2 h1 {
-      font-size: 100px;
-   }
-
-   .about-col-2 p {
-      width: 70%;
-      font-size: 40px;
-      text-align: center;
-   }
-
-   .tab-links {
-      margin-top: 100px;
-      font-size: 50px;
-   }
-
-   .responsiv {
-      font-size: 30px;
-      display: flex;
-      flex-direction: column;
       width: 100%;
    }
 
-   .responsiv .tab-contents ul li span {
-      font-size: 40px;
+   .about-col-1 img {
+      height: 100%;
+      border-radius: 50%;
+   }
+   .contact{
+      flex-direction: column;
+      height: auto;
+      padding: 50px 0px;
+   }
+   .leftcontact{
+      width: 90%;
+      padding-bottom: 30px;
+   }
+   .rightcontact{
+      width: 70%;
+
    }
 
 }
