@@ -205,8 +205,6 @@ p {
 
 }
 
-.about-col-2 p {}
-
 .tab-titles {
    display: flex;
    margin: 20px 0 40px;
@@ -258,7 +256,8 @@ p {
 
 .services {
    width: 100%;
-   height: 90vh;
+   height: auto;
+   padding: 100px 0px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -269,11 +268,12 @@ p {
    display: flex;
    flex-direction: column;
    width: 80%;
-   height: 70vh;
+   height: auto;
 }
 
 .s2 h2 {
    font-size: 70px;
+   padding-bottom: 80px;
 }
 
 .s3 {
@@ -293,12 +293,20 @@ p {
    background-color: #2a2a2a;
    border-radius: 10px;
    overflow: hidden;
+   position: relative;
 }
 
 .s4:hover {
    height: 252px;
    width: 352px;
    background-color: rgb(248, 71, 71);
+
+}
+
+.s4 img {
+   width: 150%;
+   display: block;
+   background-size: contain;
 
 }
 
@@ -323,7 +331,81 @@ p {
    color: #fff;
    cursor: pointer;
 }
+.layer {
+   background: transparent;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
+}
 
+.layer:hover {
+   background: linear-gradient(#00000099, #f84747);
+}
+
+.layer h3,
+.layer img {
+   width: 100%;
+   font-weight: 600;
+   color: #fff;
+   font-size: 40px;
+   position: absolute;
+   padding-left: 10px;
+   bottom: 0%;
+   left: 50%;
+   transform: translateX(-50%);
+   opacity: 0;
+   transition: 0.5s;
+   background: transparent;
+}
+
+.layer:hover h3,
+.layer:hover img {
+   bottom: 10%;
+   opacity: 1;
+
+
+}
+
+.p1 {
+   padding: 0;
+}
+
+.layer img {
+   width: 10%;
+   padding-bottom: 15px;
+   top: 6%;
+   right: 0%;
+   left: auto;
+}
+
+#projectbtn {
+   width: 150px;
+   color: #fff;
+   background-color: transparent;
+   border: none;
+   border-radius: 5px;
+   padding: 10px;
+   font-weight: 600;
+   transition-duration: 0.5s;
+   transition-timing-function: ease-in-out;
+   box-shadow: 1px 1px 1px;
+   margin-top: 40px;
+}
+
+#projectbtn:hover {
+   color: #f84747;
+}
+
+.centerdiv {
+   width: 100%;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center
+}
 .contact {
    display: flex;
    justify-content: center;
@@ -384,35 +466,28 @@ textarea {
    width: 100%;
    border: 1px solid #ccc;
    border-radius: 4px;
-
-
 }
 
 textarea {
    height: 150px;
-
 }
 
-button.submit {
+.submit {
    padding: 10px 20px;
    background-color: #333;
    color: #fff;
    border: none;
    cursor: pointer;
+   transition-duration: 1s;
+   transition-timing-function: ease-out;
 }
 
-button.submit:hover {
+.submit:hover {
    background-color: rgb(248, 71, 71);
-   ;
 }
 
+#mail,
 #call {
-   text-decoration: none;
-   color: #fff;
-
-}
-
-#mail {
    text-decoration: none;
    color: #fff;
 
@@ -550,18 +625,22 @@ button.submit:hover {
       height: 100%;
       border-radius: 50%;
    }
-   .contact{
+
+   .contact {
       flex-direction: column;
       height: auto;
       padding: 50px 0px;
    }
-   .leftcontact{
+
+   .leftcontact {
       width: 90%;
       padding-bottom: 30px;
    }
-   .rightcontact{
+
+   .rightcontact {
       width: 70%;
 
    }
 
 }
+
