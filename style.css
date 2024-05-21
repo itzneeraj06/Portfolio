@@ -174,6 +174,8 @@ p {
 .about-col-1 img {
    border-radius: 15px;
    width: 80%;
+   transition-duration: 1s;
+   transition-timing-function: ease-in-out;
 }
 
 .about-col-1 img:hover {
