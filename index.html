@@ -117,8 +117,8 @@
     </div>
     <div class="services">
         <div class="s2">
-            <h2>Our Services</h2>
-            <div class="s3">
+            <h2 id="dynamicServices1" class="defaultServices">Our Services</h2>
+            <div id="dynamicServices3" class="s3">
                 <div class="s4">
                     <i class="fa-solid fa-file-code"></i>
                     <h3>Web Devlopment</h3>
@@ -146,8 +146,8 @@
 
     <div class="services">
         <div class="s2">
-            <h2>My Projects</h2>
-            <div class="s3">
+            <h2 id="dynamicServices2" class="defaultServices">My Projects</h2>
+            <div class="s3 dynamicBox ">
                 <div class="s4 p1">
 
                     <img src="l2.jpg" alt="">
@@ -187,12 +187,12 @@
                     id="mail">contact@neeraj.com</a></p>
             <p><i class="fa-solid fa-phone"></i> <a href="tel:7745930380" id="call">123-456-7890</a></p>
 
-            <div class="icon">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/neeraj0604_"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/itzneeraj06"><i class="fa-brands fa-github"></i></a>
+            <div class="icon " >
+                <a href="#" ><i class="fab fa-facebook"></i></a>
+                <a href="#" ><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/neeraj0604_" ><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/neeraj-chouhan-926aa5217/" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/itzneeraj06" ><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
         <div class="rightcontact">
@@ -242,10 +242,30 @@
 
             }
         }
-        setTimeout(type, 2000);
+        setTimeout(type, 1200);
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
+
+        
+        window.addEventListener('scroll', function () {
+            var element1 = document.getElementById('dynamicServices1');
+            var element2 = document.getElementById('dynamicServices2');
+            var element3 = document.getElementById('dynamicServices3');
+            var element4 = document.getElementById('dynamicServices4');
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 1000) {
+                element1.classList.add('dynamicServices');
+            }
+            if (scrollPosition > 1300) {
+                element3.classList.add('dynamicBox');
+            }
+            if (scrollPosition > 1700) {
+                element2.classList.add('dynamicServices');
+            }
+        });
+
     </script>
 
 </body>
