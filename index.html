@@ -139,7 +139,8 @@
                 <div class="s4">
                     <i class="fa-regular fa-lightbulb"></i>
                     <h3>Digital Marketing</h3>
-                    <p>Digital marketing promotes your business online. It uses various channels like SEO, social media, email marketing,
+                    <p>Digital marketing promotes your business online. It uses various channels like SEO, social media,
+                        email marketing,
                         and targeted ads to reach your ideal audience.</p>
                     <button>learn more</button>
                 </div>
@@ -151,6 +152,60 @@
         <div class="s2">
             <h2 id="dynamicServices2" class="defaultServices">My Projects</h2>
             <div class="s3 dynamicBox ">
+                <div class="s4 p1">
+
+                    <img src="book.jpg" alt="">
+                    <div class="layer">
+                        <h3>BookStore</h3>
+                        <a href="https://bookstoredotcom.vercel.app/"><img src="share.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="s4 p1">
+
+                    <img src="l2.jpg" alt="">
+                    <div class="layer">
+                        <h3>FootFlex</h3>
+                        <a href="https://footflex.vercel.app/"><img src="share.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="s4 p1">
+
+                    <img src="l1.jpg" alt="">
+                    <div class="layer">
+                        <h3>MobiTechz</h3>
+                        <a href="https://mobitechz.vercel.app/"><img src="share.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="hideproject" class="s3 dynamicBox hideproject animateproject">
+                <div class="s4 p1">
+
+                    <img src="employee.jpg" alt="">
+                    <div class="layer">
+                        <h3>EmployeeData</h3>
+                        <a href="https://employeedataon.vercel.app/"><img src="share.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="s4 p1">
+
+                    <img src="meme.jpg" alt="">
+                    <div class="layer">
+                        <h3>Meme</h3>
+                        <a href="https://randommemegenerator.vercel.app/"><img src="share.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="s4 p1">
+
+                    <img src="p2.png" alt="">
+                    <div class="layer">
+                        <h3>Tourism</h3>
+                        <a href="https://safarwithtourly.vercel.app/"><img src="share.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div id="hideproject2" class="s3 dynamicBox hideproject animateproject">
                 <div class="s4 p1">
 
                     <img src="l2.jpg" alt="">
@@ -175,10 +230,11 @@
                         <a href="https://safarwithtourly.vercel.app/"><img src="share.png" alt=""></a>
                     </div>
                 </div>
-            </div>
-            <div class="centerdiv">
-                <button id="projectbtn" onclick="link()">More Projects</button>
 
+            </div> -->
+            <div id="btn" class="centerdiv">
+                <button id="projectbtn" onclick="link()">Show More</button>
+                <button id="projectbtn2" onclick="link2()">Show Less</button>
             </div>
         </div>
     </div>
@@ -226,8 +282,36 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
         function link() {
-            const URL = "https://github.com/itzneeraj06?tab=repositories";
-            window.open(URL, '_blank');
+            // const URL = "https://github.com/itzneeraj06?tab=repositories";
+            // window.open(URL, '_blank');
+
+            var hidebtn = document.getElementById('hideproject');
+            hidebtn.classList.remove('hideproject');
+            hidebtn.classList.add('showproject');
+
+            // var hidebtn2 = document.getElementById('hideproject2');
+            // hidebtn2.classList.remove('hideproject');
+            // hidebtn2.classList.add('showproject');
+
+            document.getElementById('projectbtn').style.display = 'none';
+            document.getElementById('projectbtn2').style.display = 'flex';
+
+        }
+        function link2() {
+            // const URL = "https://github.com/itzneeraj06?tab=repositories";
+            // window.open(URL, '_blank');
+
+            var hidebtn = document.getElementById('hideproject');
+            hidebtn.classList.remove('showproject');
+            hidebtn.classList.add('hideproject');
+
+            // var hidebtn2 = document.getElementById('hideproject2');
+            // hidebtn2.classList.remove('showproject');
+            // hidebtn2.classList.add('hideproject');
+
+            document.getElementById('projectbtn').style.display = 'flex';
+            document.getElementById('projectbtn2').style.display = 'none';
+
         }
         const text = "Web Developer "; // Text to be typed
         let index = 0;
@@ -260,10 +344,10 @@
             if (scrollPosition > 1000) {
                 element1.classList.add('dynamicServices');
             }
-            if (scrollPosition > 1300) {
+            if (scrollPosition > 1000) {
                 element3.classList.add('dynamicBox');
             }
-            if (scrollPosition > 1700) {
+            if (scrollPosition > 1500) {
                 element2.classList.add('dynamicServices');
             }
         });

@@ -385,7 +385,8 @@ p {
    left: auto;
 }
 
-#projectbtn {
+#projectbtn,
+#projectbtn2 {
    width: 150px;
    color: #fff;
    background-color: transparent;
@@ -397,18 +398,25 @@ p {
    transition-timing-function: ease-in-out;
    box-shadow: 1px 1px 1px;
    margin-top: 40px;
+   justify-content: center;
 }
 
-#projectbtn:hover {
+#projectbtn2 {
+   display: none;
+}
+
+#projectbtn:hover,
+#projectbtn2:hover {
    color: #f84747;
 }
+
 
 .centerdiv {
    width: 100%;
    display: flex;
    align-content: center;
    align-items: center;
-   justify-content: center
+   justify-content: center;
 }
 
 .contact {
@@ -447,7 +455,7 @@ p {
    margin-right: 10px;
    color: #fff;
    font-size: 20px;
-   
+
    transform: translateY(10%);
 
 }
@@ -455,20 +463,13 @@ p {
 .leftcontact i:hover {
 
    color: rgb(248, 71, 71);
-   
+
    transform: translateY(0)
-
 }
 
-.iconhover {
+.iconhover {}
 
-
-}
-
-.iconhover:hover {
-
-
-}
+.iconhover:hover {}
 
 .rightcontact {
    width: 50%;
@@ -664,7 +665,8 @@ textarea {
 
 }
 
-.defaultServices {
+.defaultServices,
+.animateproject {
    opacity: 0;
    transform: translateY(2vh);
 
@@ -683,4 +685,29 @@ textarea {
    opacity: 1;
    transition: 1s ease;
    transform: translateY(0%)
+}
+
+.showproject {
+   display: flex;
+}
+
+.hideproject {
+   display: none;
+}
+
+.showproject {
+   animation: project 0.2s ease-in-out 0s;
+}
+
+@keyframes project {
+
+   0% {
+      opacity: 0.5;
+      transform: translateY(-5vh);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0vh);
+   }
 }
