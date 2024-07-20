@@ -111,7 +111,7 @@ nav ul li a:hover::after {
    margin-top: 5px;
    color: #fff;
    position: relative;
-   animation: first 2s ease 0s 1 alternate;
+/*    animation: first 2s ease 0s 1 alternate; */
 }
 
 #mainname {
