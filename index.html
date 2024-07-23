@@ -21,11 +21,14 @@
     <meta name="keywords" content="neeraj chouhan ">
     <meta name="keywords" content="neeraj chouhan portfolio ">
     <meta name="author" content="neeraj chouhan">
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="Hero_section ">
+    <div class="Hero_section " style="background: linear-gradient(99deg, rgba(7, 7, 7, 1) 0%, rgba(3, 2, 20, 1) 94%);
+">
         <nav>
             <h1 class="logo"><span class="N">N</span><span class="R">R</span><span class="J">J</span></h1>
             <ul>
@@ -156,7 +159,7 @@
     <div class="services">
         <div class="s2">
             <h2 id="dynamicServices2" class="defaultServices">My Projects</h2>
-            <div class="s3 dynamicBox ">
+            <div id="dynamicServices4" class="s3">
                 <div class="s4 p1">
 
                     <img src="book.webp" alt="">
@@ -269,6 +272,14 @@
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+    <script>
+        bubbly({
+            colorStart: "rgb(7,7,7)",
+            colorStop: "rgb(3, 2, 20)",
+            blur: 1
+        });
+    </script>
 
     <script>
 
@@ -354,6 +365,9 @@
             }
             if (scrollPosition > 1500) {
                 element2.classList.add('dynamicServices');
+            }
+            if (scrollPosition > 1500) {
+                element4.classList.add('dynamicBox');
             }
         });
 
