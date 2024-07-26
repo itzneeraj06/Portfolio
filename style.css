@@ -111,7 +111,7 @@ nav ul li a:hover::after {
    margin-top: 5px;
    color: #fff;
    position: relative;
-/*    animation: first 2s ease 0s 1 alternate; */
+   /* animation: first 2s ease 0s 1 alternate; */
 }
 
 #mainname {
@@ -258,7 +258,8 @@ p {
    display: block;
 }
 
-.services {
+.services,
+.projects {
    width: 100%;
    height: auto;
    padding: 100px 0px;
@@ -268,19 +269,26 @@ p {
    font-family: 'Roboto', sans-serif;
 }
 
-.s2 {
+.p1 {
+   padding: 0;
+}
+
+.s2,
+.p2 {
    display: flex;
    flex-direction: column;
    width: 80%;
    height: auto;
 }
 
-.s2 h2 {
+.s2 h2,
+.p2 h2 {
    font-size: 70px;
    padding-bottom: 80px;
 }
 
-.s3 {
+.s3,
+.p3 {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
@@ -291,7 +299,8 @@ p {
    transform: translateY(20%)
 }
 
-.s4 {
+.s4,
+.p4 {
    height: 250px;
    width: 350px;
    margin: 20px;
@@ -308,7 +317,7 @@ p {
 
 }
 
-.s4 img {
+.p4 img {
    width: 150%;
    display: block;
    background-size: contain;
@@ -371,12 +380,6 @@ p {
 .layer:hover img {
    bottom: 10%;
    opacity: 1;
-
-
-}
-
-.p1 {
-   padding: 0;
 }
 
 .layer img {
@@ -412,13 +415,39 @@ p {
    color: #f84747;
 }
 
-
 .centerdiv {
    width: 100%;
    display: flex;
    align-content: center;
    align-items: center;
    justify-content: center;
+}
+
+/* animation on scroll */
+.defaultServices {
+   opacity: 0;
+   transform: translateY(2vh);
+}
+
+.dynamicServices {
+   opacity: 1;
+   transform: translateY(0);
+   transition: all 1s ease-in-out;
+}
+
+.dynamicBox {
+   opacity: 1;
+   transition: 1s ease;
+   transform: translateY(0%)
+}
+
+.hideproject {
+   display: none;
+}
+
+.showproject {
+   display: flex;
+   animation: project 0.2s ease-in-out 0s;
 }
 
 .contact {
@@ -469,10 +498,6 @@ p {
    transform: translateY(0)
 }
 
-.iconhover {}
-
-.iconhover:hover {}
-
 .rightcontact {
    width: 50%;
    display: flex;
@@ -512,10 +537,7 @@ textarea {
 #call {
    text-decoration: none;
    color: #fff;
-
 }
-
-
 
 @keyframes blink {
 
@@ -529,7 +551,7 @@ textarea {
    }
 }
 
-@keyframes first {
+/* @keyframes first {
    from {
       opacity: 0.2;
    }
@@ -537,8 +559,7 @@ textarea {
    to {
       opacity: 1;
    }
-
-}
+} */
 
 @keyframes bg {
    from {
@@ -560,13 +581,26 @@ textarea {
    }
 }
 
-@keyframes img {
+/* @keyframes img {
    from {
       opacity: 0.5;
    }
 
    to {
       opacity: 1;
+   }
+} */
+
+@keyframes project {
+
+   0% {
+      opacity: 0.5;
+      transform: translateY(-5vh);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0vh);
    }
 }
 
@@ -594,9 +628,6 @@ textarea {
    .leftcontact {
       padding: 0px;
    }
-
-
-
 }
 
 @media (max-width:450px) {
@@ -675,51 +706,4 @@ textarea {
 
    }
 
-}
-
-.defaultServices,
-.animateproject {
-   opacity: 0;
-   transform: translateY(2vh);
-
-
-}
-
-.dynamicServices {
-
-   opacity: 1;
-   transform: translateY(0);
-   transition: all 1s ease-in-out;
-
-}
-
-.dynamicBox {
-   opacity: 1;
-   transition: 1s ease;
-   transform: translateY(0%)
-}
-
-.showproject {
-   display: flex;
-}
-
-.hideproject {
-   display: none;
-}
-
-.showproject {
-   animation: project 0.2s ease-in-out 0s;
-}
-
-@keyframes project {
-
-   0% {
-      opacity: 0.5;
-      transform: translateY(-5vh);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateY(0vh);
-   }
 }
