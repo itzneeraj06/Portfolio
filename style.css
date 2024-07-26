@@ -317,6 +317,10 @@ p {
 
 }
 
+.p4 {
+   padding: 0;
+}
+
 .p4 img {
    width: 150%;
    display: block;
